@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>Tervetuloa mersu kauppaan</h1>
+<p>Tieto tästä mersusta.</p>
+  
+<img src="https://th.bing.com/th/id/R.c107643fd95c2e45f667bd0dd9fd4be0?rik=X3zinGhnKbmbCw&riu=http%3a%2f%2fi.ytimg.com%2fvi%2fTwzopa5HIfU%2fmaxresdefault.jpg&ehk=hYPlwtRWOJiKVJ2uN5sx5TgaQhNA7k4Zc%2fUhbhJhT%2bw%3d&risl=&pid=ImgRaw&r=0"height="250px"width="auto"
+     
+     
+<p> joku vanha malli</li>
+  <ol>
+  <li> 2 iso turbo</li>
+<li> Diesel</li>
+<li> mittari kulkema vähä päälle 120000km</li>
+<li> madallettu</li>
+ 
+    <h3 class ="title">jos serkku poika kiinnostaa ostaa tällänen mersu meeppäs täyttää nää alakohdat</h3>
+        <from>
+          <P> Name</p>
+          <input type="text" name="name">
+          <p>email</p>
+          <input type="text" type="email">
+         <input type="submit">
+        </from>
+        </div>
+  <footer>
+  </body>
+</html>
