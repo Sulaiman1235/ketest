@@ -23,7 +23,7 @@
           <P> Name</p>
           <input type="text" name="name">
           <p>email</p>
-          <input type="text" type="email">
+          <input type="text" type="emasssil">
          <input type="submit">
         </from>
         </div>
