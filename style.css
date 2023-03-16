@@ -1,0 +1,77 @@
+nav{
+  background-color: green;
+}
+body{
+  background-color: buleviolet;
+  height: 10vh;
+}
+.content{
+  background-color: gold;
+}
+nav span.title{
+  color: red;
+}
+.body{
+  background-color: blueviolet;
+  height: 10vh;
+}
+.contect{
+  background-color: gold;
+  padding: 30px; 
+  height: 30hv;
+  min-height: 100px;
+}
+footer{
+  margin-top:40px;
+  font-size:14px;
+  text-aligan: center;
+}
+
+transsistion: font-size 0.5s ease-in-out;
+
+nav span.title{
+  color: red;
+}
+
+span.title { 
+font family: cursive;
+}
+
+span.version {
+  font-size: 9px;
+  display: block;
+  position: relative;
+  top: -8px;
+  left: 5px;
+}
+@media(max-width: 768px){
+  .banner{
+    font-size: 50px;
+  }
+}
+ 
+.banner {
+  background-color: #383312;
+  margin-top: 40px;
+  font-size: 14px;
+  text-align: center;
+  height: 40vh                     ;
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media(max-width: 640px ){
+  .float-reight {
+    float: right;
+    width: 100%;
+    height: auto;
+  }
+}
+.float-right{
+  float: right;
+}
+.left{
+  float: left; 
+  margin-right: 1.5em;
+}

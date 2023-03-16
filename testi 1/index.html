@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>string manipulation</title>
+
+</head>
+<body>
+    
+<h1 id="sentance">
+Nam molestie nec tortor
+ Donec placerat leo sit amet velit. Vestibulum id justo u t vitae massa. Proin in dolor mauris consequat aliquam.
+ Donec ipsum, vestibulum ullamcorper venenatis augue. Al
+ iquam tempus nisi in auctor vulputate, erat felis pellentesque
+ augue nec, pellentesque lectus justo nec erat. Aliquam et ni
+ sl. Quisque sit amet dolor in justo pretium condimentum.
+
+</h1>
+<script>
+
+
+var sentanceNode = document.getElementById("sentance");
+var sentance = sentanceNode.innerText;
+ 
+var upperSentance = sentance.toUpperCase()
+var lowerSentance = sentance.toLowerCase()
+var firstTenChars = sentance.substr(10)
+
+var allWords = sentance.split(" ")
+console.log(allWords)
+var bracketWords = "(" + allWords.join(")(") + ")"
+
+var firstThreeWords = allWords.slice(0, 3)
+var middleWords = allWords.slice(5, 10)
+var makeSentance = middleWords.join(" ")
+
+sentanceNode.innerText = makeSentance
+
+</script>
+
+
+
+</body>
+</html>
