@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+ <h1 id="title"></h1>
+    <script>
+function doMath(num) {
+    num = Number(num);
+    if(num){
+        //is real number
+        var newNumber = (num + 100) / 3;
+        return newNumber
+    } else {
+        //not a real number
+        return false;
+    }
+}
+
+var customNum = doMath ("sulkku");
+console.log(customNum)
+
+ function  $(id) {
+     return document.getElementById(id)
+ }
+
+ var title = $ ("title");
+ title.innerText = "Custom inner text"
+
+function cToF(c_num) {
+    var faherenheit = (c_num * 1.8) + 32;
+    return faherenheit;
+}
+
+var zero = cToF(0); console.log(zero);
+
+
+var zero = cToF (0); console.log(zero);
+var twenty = cToF (20); console.log(twenty)
+var boiling = cToF (100); console.log(boiling)
+var freezing = cToF(-40); console.log(freezing)
+    </script>
+
+
+
+
+</body>
+</html>
