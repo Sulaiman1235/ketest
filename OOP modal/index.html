@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+       .modal { 
+           position: fixed; top: 50%; left: 50%; border: 1px solid red; background-color: red; width: 50px; padding: 20px; transform: translate(-50%, -50%); display:none ;}
+    </style>
+
+
+<div class="modal js-modal">
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nostrum ratione dolorum quasi tenetur deleniti aspernatur itaque rerum repellendus quam obcaecati eaque facilis nihil, nulla vel odio! Sequi ducimus illum nulla, ullam, inventore vitae adipisci culpa esse sint fugiat porro magni quidem perspiciatis ea deleniti id odit aut ab odio.
+
+    </p>
+
+<p>
+    <button class=""js-close-modal"> close Modal</button>
+</p>
+
+</div>
+    <button class="js-open-modal"> Avaa modal</button>
+
+
+
+
+    <script>
+class Modal {
+
+ constructor(title, text) {
+
+ this.modal = document.querySelector(".js-modal")
+ if(title !== undefined) {
+ this.modal.querySelector(".js-modal-title").innerText = title
+ } if(text !== undefined) { 
+ this.modal.querySelector(".js-modal-text").innerText = text
+}
+ }
+ open() {
+
+ this.modal.style.display = 'initial'
+
+ }
+
+ close () {
+
+ this.modal.style.display = 'none'
+
+ }
+
+ }
+
+
+
+
+ const openBtn = document.querySelector(".js-open-modal")
+
+ const closeBtn = document.querySelector(".js-modal")
+ const modal = new Modal ("new title","new text in here")
+
+
+
+
+ openBtn.addEventListener('click', function (event){
+
+ modal.open()
+
+ })
+
+
+
+
+ closeBtn.addEventListener('click', function(event){
+
+modal.close()
+ })
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Document</title>
+</head>
+<body>
+    
+<h1> changing css with event listeners</h1>
+
+<div>
+
+    <label> background color</label>
+    <input type="text" class="js-bg-color" style='padding: 30px; font-size: 30px;'>
+
+</div>
+<div> 
+    <label> text color</label>
+    <input type="text" class="js-text-color" style='padding: 30px; font-size: 30px;'>
+    
+</div>
+
+<script>
+var bgColor = document.querySelector(".js-bg-color")
+//valitse bg colorin
+var textColor = document.querySelector(".js-text-color")
+// valitse teksti väri
+var body = document.querySelector("body")
+// valitse variablen
+
+bgColor.addEventListener('keyup',function(event) {
+    // tekee eventlisternin bgcolorille
+    var color = event.target.value
+    // tekee varoablen colorille
+    switch(color) {
+case 'red':
+case 'blue':
+case 'black':
+    body.style.backgroundColor = color
+    break
+    default:
+        body.style.backgroundColor = "yellow"
+        // valitsee tekstin väri 
+        break
+    }
+   
+  
+    
+});
+
+textColor.addEventListener('keyup',function(event) {
+
+body.style.color = event.target.value
+});
+
+
+</script>
+
+</body>
+</html>

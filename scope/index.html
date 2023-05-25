@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <title>scope</title>
+</head>
+<body>
+
+<script>
+
+var course = "javascript for beginners";
+
+(function doAthing() {
+var teacher= "kalob taulinen"
+console.log("!!!", teacher)
+console.log("!!!", course)
+})();
+
+console.log("OUT OF SCOPE:", teacher)
+
+doAthing(course)
+
+console.log("OUT OF SCOPE:", teacher)
+
+
+</script>
+
+
+    
+</body>
+</html>

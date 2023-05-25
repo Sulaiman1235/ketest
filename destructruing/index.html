@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>Destructing</h1> 
+<script>
+
+var arr = ["sulkku", "juuso", "noel"]
+//const sulkku = arr[0]
+//const juuso = arr [1]
+//var arr = ["sulkku", "juuso", "noel"]
+// let[sulkku, juuso, noel] = arr
+
+//let [sulkku, juuso, noel, ...rest] = arr
+//console.log(rest)
+
+//var fullName = prompt (" what is you full name")
+
+//let [firstName, lastName] = fullName.split(' ')
+
+//console.log(firstName, "is the first name")
+
+//console.log(lastName, "is the last name")
+
+const person = {
+    "first_name_for_the_user": "sulkku",
+    'age': 30,
+    'cats': 2,
+    'food': 'pizza',
+    'color': 'red'
+}
+
+let {
+    name,
+    food,
+    color = 'blue'
+    //first_name_for_the_user: firstName, food: favoriteFood
+
+} = person
+
+console.log("Name is", name)
+console.log("food is", food)
+
+
+
+
+</script>
+
+
+
+</body>
+</html>

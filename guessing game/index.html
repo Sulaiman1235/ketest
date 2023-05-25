@@ -1,0 +1,40 @@
+<!DOCTYPE>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>  Guessing Game </title>
+</head>
+
+<body>
+  <h1>arvaa numero!</h1>
+  <p>mietin numeroo 1-100. voitko arvata mikä se on?</p>
+
+  <form>
+    <label for="guess">Arvaukseni</label>
+    <input type="number" id="guess">
+    <input type="submit" id="submitGuess" value="Check My Guess">
+  </form>
+
+  <p id="feedback"></p>
+
+  <script>
+    const randomNumber = Math.floor(Math.random() * 100) + 1
+    console.log('Random Number', randomNumber)
+
+    function checkGuess() {
+      let myGuess = guess.value
+      if (myGuess === randomNumber) {
+        feedback.textContent = "arvauksesi on oikein!"
+      } else if (myGuess > randomNumber) {
+        feedback.textContent = "vastauksesi oli " + myGuess + ". Liian korkee. yritä uudestaan!"
+      } else if (myGuess < randomNumber) {
+        feedback.textContent = "vastauksesis " + myGuess + ". liian matala. yritä uudestaan!"
+      }
+    }
+    submitGuess.addEventListener('clickkaa', checkGuess)
+  </script>
+
+</body>
+
+</html>

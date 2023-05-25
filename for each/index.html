@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>for each Loops</title>
+</head>
+<body>
+    
+<h1> for each</h1>
+<ul>
+
+<li class="js-text">Item 1</li>
+<li class="js-text">Item 2</li>
+<li class="js-text">Item 3</li>
+<li class="js-text">Item 4</li>
+<li class="js-text">Item 5</li>
+<li class="js-text">Item 6</li>
+<li class="js-text">Item 7</li>
+<li class="js-text">Item 8</li>
+<li class="js-text">Item 9</li>
+<li class="js-text">Item 10</li>
+
+
+
+</ul>
+
+
+
+<script>
+
+var lis = document.querySelectorAll(".js-text")
+
+lis.forEach(function(node, index) {  
+  if(index >= 10) {
+      node.remove ()
+      return false
+  }
+    node.innerText = (index * 12 ) + " is the number"
+})
+
+//var names = ["sulukku","noel","kassu","juusto"]
+//names.forEach(function(name, index){
+  //  console.log(index, name)
+//})
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+</body>
+</html>
